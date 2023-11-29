@@ -1,0 +1,11 @@
+expone:= X+1-1*10/10 % 100;
+
+exptwo := not (x or 11 and 45) + (1 * 4^2^3 % X);
+
+expthree := not not not (not a and b);
+
+regfour ::= a|b?&c#;
+
+regfive ::= a & y | x? & k# & (m?|d#);
+
+addsix += one + exptwo and expthree * not 11 or 45

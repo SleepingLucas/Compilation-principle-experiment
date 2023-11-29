@@ -1,0 +1,11 @@
+release/main.o
+release/mainwindow.o
+release/parse.o
+release/scan.o
+release/util.o
+release/codeeditor.o
+release/highlighter.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_mainwindow.o
+release/moc_codeeditor.o
+release/moc_highlighter.o

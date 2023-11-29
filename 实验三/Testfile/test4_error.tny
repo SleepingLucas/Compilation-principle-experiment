@@ -1,0 +1,9 @@
+if (1 = 1) [
+	x :== 1;
+];
+
+for x += 1 to 3 do
+	write 1
+enddo
+
+x :== 1

@@ -1,0 +1,36 @@
+{old}{
+if x <> 0 then
+	a := 1
+else 
+	if x > 0 then
+		a := 2
+	else
+		a := 3
+	end
+end;
+
+if x > 0 then
+	b := 1;
+	if x < 10 then
+		b := 2
+	end
+else
+	b := 3
+end
+}
+
+if (x > 0) [
+	if (x < 10) [
+		b := 2
+	] else [
+		b := 3
+	] 
+];
+
+if (x > 0) [
+	if (x < 10) [
+		b := 2
+	]
+] else [
+		b := 3
+] 
