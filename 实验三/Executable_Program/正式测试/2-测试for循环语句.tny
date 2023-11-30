@@ -1,0 +1,10 @@
+{ 下面程序段是测试for循环 }
+for fact := x downto 1 do 
+	fact := fact * x;
+	x:=x+1
+enddo;
+
+for fact := 1 to x do 
+	fact := fact * x;
+	x:=x-1
+enddo

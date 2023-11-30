@@ -1,0 +1,13 @@
+x:=5;
+if( x>=1) [
+    for fact := x downto 1 do 
+        fact := fact * x;
+        if (fact<>5) [y:=10] else [y:=20];
+        for z := 1 to y do 
+            x:= 2 +3 and 3*4 or 5%6^2 and not 5 * (7+9);
+            x+=1-x
+        enddo
+    enddo
+] else [
+    w::= ((a|b)?&d&d#)&(p&d&d#)?&((E|e)&((a|b)?&d&d#))?
+]
