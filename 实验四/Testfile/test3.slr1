@@ -1,0 +1,25 @@
+G->Q
+Q->Q;S | S
+S->I | L | A | R | W
+I->i E t Q e | i E t Q s Q e
+L->l Q u E
+A->d := E
+R->r d
+W->w E
+E->M C M | M
+C-> < | =
+M->M O T | T
+O-> + | -
+T->T P F | F
+P-> * | /
+F->(E) | n | d
+$$$
+r d;
+i n < d t
+  d := n;
+  l
+    d := d * d;
+    d := d - n
+  u d = n;
+  w d
+e

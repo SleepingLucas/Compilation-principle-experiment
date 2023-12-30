@@ -1,0 +1,10 @@
+*.md
+*.doc
+*.docx
+*.pdf
+*.zip
+
+!README.md
+!设计报告书 - 副本.pdf
+!程序使用说明书.pdf
+!测试报告 - 副本.pdf

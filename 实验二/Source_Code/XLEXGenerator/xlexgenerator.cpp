@@ -190,6 +190,8 @@ void XLEXGenerator::NFA2DFA() {
 }
 
 // 使用合并的方法，将DFA最小化
+/* 有 bug，分拆法待补充
+ */
 void XLEXGenerator::minimizeDFA() {
     DSU dsu(idDFA);
     map<int, int> DFA2minDFA;

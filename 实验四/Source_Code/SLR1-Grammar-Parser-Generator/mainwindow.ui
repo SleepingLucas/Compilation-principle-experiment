@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1163</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,15,2,3,2,3,2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="fileText">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openFileButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string comment="打开文件" extracomment="打开文件"/>
+        </property>
+        <property name="text">
+         <string>打开文法规则</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saveFileButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string comment="打开文件" extracomment="打开文件"/>
+        </property>
+        <property name="text">
+         <string>保存文法规则</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,6,4">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5" stretch="9,3">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	border-width: 0.5px;
+	border-color: #aaaaaa;
+	border-style: solid;
+	margin-top:8px
+}
+
+QGroupBox::title {
+	font: 14px &quot;Microsoft YaHei&quot;;
+	color: #000000;
+	subcontrol-origin: margin;
+	left:20px;
+	padding: 0px 5px 0px 5px;
+}</string>
+          </property>
+          <property name="title">
+           <string>文法编辑器</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="CodeEditor" name="codeEdit"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	border-width: 0.5px;
+	border-color: #aaaaaa;
+	border-style: solid;
+	margin-top:8px
+}
+
+QGroupBox::title {
+	font: 14px &quot;Microsoft YaHei&quot;;
+	color: #000000;
+	subcontrol-origin: margin;
+	left:20px;
+	padding: 0px 5px 0px 5px;
+}</string>
+          </property>
+          <property name="title">
+           <string>句子编辑器</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="CodeEditor" name="sentenceEdit"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+	border-width: 0.5px;
+	border-color: #aaaaaa;
+	border-style: solid;
+	margin-top:8px
+}
+
+QGroupBox::title {
+	font: 14px &quot;Microsoft YaHei&quot;;
+	color: #000000;
+	subcontrol-origin: margin;
+	left:20px;
+	padding: 0px 5px 0px 5px;
+}</string>
+        </property>
+        <property name="title">
+         <string>文法分析</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="showSetButton">
+             <property name="text">
+              <string>展示first/follow集合</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="showDFAButton">
+             <property name="text">
+              <string>展示LR(0)DFA图</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="judgeButton">
+             <property name="text">
+              <string>判断文法</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="showTableButton">
+             <property name="text">
+              <string>展示SLR(1)分析表</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+	border-width: 0.5px;
+	border-color: #aaaaaa;
+	border-style: solid;
+	margin-top:8px
+}
+
+QGroupBox::title {
+	font: 14px &quot;Microsoft YaHei&quot;;
+	color: #000000;
+	subcontrol-origin: margin;
+	left:20px;
+	padding: 0px 5px 0px 5px;
+}</string>
+        </property>
+        <property name="title">
+         <string>句子分析</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,15">
+         <item>
+          <widget class="QPushButton" name="sentenceAnalysisButton">
+           <property name="text">
+            <string>开始分析</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="sentenceAnalysisTable"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1163</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CodeEditor</class>
+   <extends>QPlainTextEdit</extends>
+   <header>codeeditor.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
